@@ -101,23 +101,17 @@ body {
     left: 15px;
     top: 17px;
 }
-.del-box1{
-    position: absolute;
-    top: 9rem;
-    left: 60px;
-}
-.p-box1{
-    position: absolute;
-    top: 9rem;
-    left: 20px;
-}
 .p2-box1{
+    font-size: 22px;
     position: absolute;
     top: 9rem;
-    left: 110px;
+    left: 50px;
+}
+.mony {
+    font-size: 12px;
 }
 .hr1{
-    width: 10rem;
+    width: 9rem;
     height: 1px;
     background-color: black;
     position: absolute;
@@ -142,15 +136,10 @@ body {
 .box1-btn:active{
     background-color: rgb(252, 139, 34);
 }
-#mony{
-    left: 60px;
-}
-#mony1{
-    display: none;
-}
 .ipad {
     display: none;
 }
+
 }
 /*Ipad*/
 @media (min-width: 501px) and (max-width: 850px){
@@ -253,20 +242,14 @@ body {
     left: 10px;
     top: 190px;
 }
-.del-box1{
-    position: absolute;
-    top: 19.5rem;
-    left: 60px;
-}
-.p-box1{
-    position: absolute;
-    top: 19.5rem;
-    left: 20px;
-}
 .p2-box1{
+    font-size: 22px;
     position: absolute;
     top: 19.5rem;
-    left: 110px;
+    left: 50px;
+}
+.mony{
+    font-size: 12px;
 }
 .hr1{
     width: 8rem;
@@ -299,9 +282,6 @@ body {
 }
 .div3{
     display: flex;
-}
-#mony{
-    left: 60px;
 }
 #box3 {
     display: none;
@@ -459,23 +439,17 @@ body {
     left: 15px;
     top: 190px;
 }
-.del-box1{
-    position: absolute;
-    top: 19.5rem;
-    left: 60px;
-}
-.p-box1{
-    position: absolute;
-    top: 19.5rem;
-    left: 20px;
-}
 .p2-box1{
+    font-size: 22px;
     position: absolute;
     top: 19.5rem;
-    left: 110px;
+    left: 50px;
+}
+.mony{
+    font-size: 12px;
 }
 .hr1{
-    width: 8rem;
+    width: 10rem;
     height: 1px;
     background-color: black;
     position: absolute;
