@@ -50,7 +50,6 @@ body {
     }
     .div-box{
         display: inline;
-        position: relative;
         position: absolute;
         background-color: #ffffffa9;
         width: 90%;
@@ -72,14 +71,94 @@ body {
     #p1{
         display: none;
     }
+.box2{
+    margin-top: 5px;
+    height: 240px;
+    width: 95%;
+    position: relative;
+    left: 10px;
+    top: 37.5rem;
+    border: 1px solid #e9e6e69d;
+    border-radius: 2px;
+}
+.div-box2{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 40%;
+    border: 1px solid rgba(233, 230, 230, 0.616);
+    border-radius: 2px;
+    background-color: #f8f9f6;
+}
+.img2{
+    width: 120px;
+    position: absolute;
+    left: 8px;
+    top: 40px;
+}
+.pre-box1{
+    position: absolute;
+    left: 15px;
+    top: 17px;
+}
+.del-box1{
+    position: absolute;
+    top: 9rem;
+    left: 60px;
+}
+.p-box1{
+    position: absolute;
+    top: 9rem;
+    left: 20px;
+}
+.p2-box1{
+    position: absolute;
+    top: 9rem;
+    left: 110px;
+}
+.hr1{
+    width: 10rem;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 20px;
+    top: 8em;
+}
+
+.box1-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 45px;
+    padding-bottom: 5px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 50px;
+    background-color: rgb(255, 173, 21);
+    border: solid 1px black;
+    color: white;
+    transition: 0.3s;
+}
+.box1-btn:active{
+    background-color: rgb(252, 139, 34);
+}
+#mony{
+    left: 60px;
+}
+#mony1{
+    display: none;
+}
+.ipad {
+    display: none;
+}
 }
 /*Ipad*/
-@media (min-width: 501px) and (max-width: 768px){
+@media (min-width: 501px) and (max-width: 850px){
     .div-head{
         margin: 0;
         padding: 0;
         width: 100%;
-        height: 30px;
+        height: 35px;
         background-color: #8747f7;
         display: flex;
         justify-content: center;
@@ -143,21 +222,109 @@ body {
     .p-phone {
         display: none;
     }
+    .box2{
+    margin-top: 5px;
+    height: 400px;
+    width: 31%;
+    position: relative;
+    left: 12px;
+    top: 22.5rem;
+    border: 1px solid #e9e6e69d;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+.div-box2{
+    position: absolute;
+    right: 0;
+    height: 45%;
+    width: 100%;
+    border: 1px solid rgba(233, 230, 230, 0.616);
+    border-radius: 2px;
+    background-color: #f8f9f6;
+}
+.img2{
+    width: 120px;
+    position: absolute;
+    left: 20px;
+    top: 8px;
+}
+.pre-box1{
+    position: absolute;
+    left: 10px;
+    top: 190px;
+}
+.del-box1{
+    position: absolute;
+    top: 19.5rem;
+    left: 60px;
+}
+.p-box1{
+    position: absolute;
+    top: 19.5rem;
+    left: 20px;
+}
+.p2-box1{
+    position: absolute;
+    top: 19.5rem;
+    left: 110px;
+}
+.hr1{
+    width: 8rem;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 20px;
+    top: 18.5rem;
 }
 
-/*Computer and Desktop*/
-@media (min-width: 769px){
+.box1-btn{
+    position: absolute;
+    bottom: 10px;
+    padding-bottom: 5px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 50px;
+    background-color: rgb(255, 173, 21);
+    border: solid 1px black;
+    color: white;
+    transition: 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+    word-spacing: normal;
+    width: 8rem;
+}
+.box1-btn:active{
+    background-color: rgb(252, 139, 34);
+}
+.div3{
+    display: flex;
+}
+#mony{
+    left: 60px;
+}
+#box3 {
+    display: none;
+}
+#smart-box3{
+    display: none;
+}
+}
+
+/*Computer*/
+@media (min-width: 851px){
     .div-head{
         margin: 0;
         padding: 0;
         width: 100%;
-        height: 30px;
+        height: 40px;
         background-color: #8747f7;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     #head-btn1{
+        font-size: 15px;
         position: absolute;
         background: none;
         color: aliceblue;
@@ -167,11 +334,12 @@ body {
         margin-left: 10px;
         cursor: pointer;
         left: 1rem;
-        top: -2px;
+        top: 1px;
         padding-top: 7px;
         padding-bottom: 7px;
     }
     #head-btn2{
+        font-size: 15px;
         position: absolute;
         background: none;
         color: aliceblue;
@@ -180,12 +348,13 @@ body {
         transition: 0.3s;
         margin-left: 10px;
         cursor: pointer;
-        left: 6rem;
-        top: -2px;
+        left: 6.8rem;
+        top: 1px;
         padding-top: 7px;
         padding-bottom: 7px;
     }
     #head-btn3{
+        font-size: 15px;
         position: absolute;
         background: none;
         color: aliceblue;
@@ -194,12 +363,13 @@ body {
         transition: 0.3s;
         margin-left: 10px;
         cursor: pointer;
-        left: 10.3rem;
-        top: -2px;
+        left: 11.9rem;
+        top: 1px;
         padding-top: 7px;
         padding-bottom: 7px;
     }
     .head-btn2{
+        font-size: 15px;
         position: absolute;
         background: none;
         color: aliceblue;
@@ -209,7 +379,7 @@ body {
         margin-left: 10px;
         cursor: pointer;
         right: 1rem;
-        top: -0rem;
+        top: 4px;
         padding-top: 7px;
         padding-bottom: 7px;
     }
@@ -258,7 +428,93 @@ body {
     .p-phone{
     display: none;
 }
+.box2{
+    margin-top: 5px;
+    height: 400px;
+    width: 24%;
+    position: relative;
+    left: 12px;
+    top: 22.5rem;
+    border: 1px solid #e9e6e69d;
+    border-radius: 2px;
+    margin-right: 5px;
 }
+.div-box2{
+    position: absolute;
+    right: 0;
+    height: 45%;
+    width: 100%;
+    border: 1px solid rgba(233, 230, 230, 0.616);
+    border-radius: 2px;
+    background-color: #f8f9f6;
+}
+.img2{
+    width: 120px;
+    position: absolute;
+    left: 20px;
+    top: 8px;
+}
+.pre-box1{
+    position: absolute;
+    left: 15px;
+    top: 190px;
+}
+.del-box1{
+    position: absolute;
+    top: 19.5rem;
+    left: 60px;
+}
+.p-box1{
+    position: absolute;
+    top: 19.5rem;
+    left: 20px;
+}
+.p2-box1{
+    position: absolute;
+    top: 19.5rem;
+    left: 110px;
+}
+.hr1{
+    width: 8rem;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 20px;
+    top: 18.5rem;
+}
+
+.box1-btn{
+    position: absolute;
+    bottom: 10px;
+    padding-bottom: 5px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 50px;
+    background-color: rgb(255, 173, 21);
+    border: solid 1px black;
+    color: white;
+    transition: 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+    word-spacing: normal;
+    width: 8rem;
+    cursor: pointer;
+}
+.box1-btn:active{
+    background-color: rgb(252, 139, 34);
+}
+.div3{
+    display: contents;
+}
+.div4{
+    display: flex;
+}
+.ipad{
+    display: none;
+}
+}
+/*----------------------------------------*/
 .img1{
     animation: move2 1s;
 }
