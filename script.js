@@ -23,48 +23,9 @@ let btn10 = document.getElementById('btn22');
 let Taskbar = document.querySelector('.Taskbar');
 let timer;
 //phone-btn//
-//iphone14//
-let phonebtn1 = document.getElementById('phone-btn1');
-let phonebtn2 = document.getElementById('phone-btn2');
-let iphone14 = document.querySelector('.iphone14');
-let phonebtnn1 = document.getElementById('phone-btnn1');
-//iphone17//
-let phonebtn3 = document.getElementById('phone2-btn1');
-let phonebtn4 = document.getElementById('phone2-btn2');
-let iphone17 = document.querySelector('.iphone17');
-let phonebtnn2 = document.getElementById('phone-btnn2');
-//Samsung//
-let phonebtn5 = document.getElementById('phone3-btn1');
-let phonebtn6 = document.getElementById('phone3-btn2');
-let Samsung = document.querySelector('.Samsung');
-let phonebtnn3 = document.getElementById('phone-btnn3');
-//Samsung2//
-let phonebtn7 = document.getElementById('phone4-btn1');
-let phonebtn8 = document.getElementById('phone4-btn2');
-let Samsung2 = document.querySelector('.Samsung2');
-let phonebtnn4 = document.getElementById('phone-btnn4');
-//Samsung3//
-let phonebtn9 = document.getElementById('phone5-btn1');
-let phonebtn10 = document.getElementById('phone5-btn2');
-let Samsung3 = document.querySelector('.Samsung3');
-let phonebtnn5 = document.getElementById('phone-btnn5');
-//Infinix1//
-let phonebtn11 = document.getElementById('phone6-btn1');
-let phonebtn12 = document.getElementById('phone6-btn2');
-let Infinix1 = document.querySelector('.Infinix1');
-let phonebtnn6 = document.getElementById('phone-btnn6');
-//Infinix2//
-let phonebtn13 = document.getElementById('phone7-btn1');
-let phonebtn14 = document.getElementById('phone7-btn2');
-let Infinix2 = document.querySelector('.Infinix2');
-let phonebtnn7 = document.getElementById('phone-btnn7');
-//Infinix3//
-let phonebtn15 = document.getElementById('phone8-btn1');
-let phonebtn16 = document.getElementById('phone8-btn2');
-let Infinix3 = document.querySelector('.Infinix3');
-let phonebtnn8 = document.getElementById('phone-btnn8');
+let btnpone12 = document.getElementById('btnpone12');
+let car2 = document.getElementById('phone-btn1');
 //phone-btn//
-
 
 btn1.onclick = 
 ()=>{
@@ -444,284 +405,26 @@ search.onclick =
         },200
     );
 }
-//ser-color//
-phonebtn2.onclick = car ;
-phonebtn4.onclick = car ;
-phonebtn6.onclick = car ;
-phonebtn8.onclick = car ;
-phonebtn10.onclick = car ;
-phonebtn12.onclick = car ;
-phonebtn14.onclick = car ;
-phonebtn16.onclick = car ;
-function car(){
+//car//
+btnpone12.onclick = 
+()=>{
+    let iphone12 = document.getElementById('iphone12');
+    let iphone12coby = iphone12.cloneNode(true);
+    let btncoby1 = iphone12coby.querySelector('.box1-btn');
+    btncoby1.innerHTML = '🛒 حذف من السلة';
+    btncoby1.id = 'removeph1';
+    divcar.appendChild(iphone12coby);
+    btnpone12.style.display = 'none';
+    car2.style.display = 'block';
+    removeph1.onclick = ()=>{
+        iphone12coby.remove();
+        btnpone12.style.display = 'block'
+        car2.style.display = 'none';
+    }
+}
+//car//
+car2.onclick = 
+()=>{
     btn2.click();
-}
-//-----------------car----------------------//
-//iphone14//
-phonebtn1.onclick = 
-()=>{
-    localStorage.setItem('carA','1');
-    phonebtn1.style.display = 'none';
-    phonebtn2.style.display = 'block';
-    setTimeout(
-        ()=>{
-            iphone14.style.display = 'block';
-        },3000
-    );
-}
-phonebtnn1.onclick =
-()=>{
-    localStorage.setItem('carA','0');
-    phonebtn1.style.display = 'block';
-    phonebtn2.style.display = 'none';
-    iphone14.style.display = 'none';
-}
-//iphone17//
-phonebtn3.onclick = 
-()=>{
-    localStorage.setItem('carB','3');
-    phonebtn3.style.display = 'none';
-    phonebtn4.style.display = 'block';
-    setTimeout(
-        ()=>{
-            iphone17.style.display = 'block';
-        },3000
-    );
-}
-phonebtnn2.onclick =
-()=>{
-    localStorage.setItem('carB','4');
-    phonebtn3.style.display = 'block';
-    phonebtn4.style.display = 'none';
-    iphone17.style.display = 'none';
-}
-//Samsung//
-phonebtn5.onclick = 
-()=>{
-    localStorage.setItem('carC','5');
-    phonebtn5.style.display = 'none';
-    phonebtn6.style.display = 'block';
-    setTimeout(
-        ()=>{
-            Samsung.style.display = 'block';
-        },3000
-    );
-}
-phonebtnn3.onclick =
-()=>{
-    localStorage.setItem('carC','6');
-    phonebtn5.style.display = 'block';
-    phonebtn6.style.display = 'none';
-    Samsung.style.display = 'none';
-}
-//Samsung2//
-phonebtn7.onclick = 
-()=>{
-    localStorage.setItem('carD','7');
-    phonebtn7.style.display = 'none';
-    phonebtn8.style.display = 'block';
-    setTimeout(
-        ()=>{
-            Samsung2.style.display = 'block';
-        },3000
-    );
-}
-phonebtnn4.onclick =
-()=>{
-    localStorage.setItem('carD','8');
-    phonebtn7.style.display = 'block';
-    phonebtn8.style.display = 'none';
-    Samsung2.style.display = 'none';
-}
-//Samsung3//
-phonebtn9.onclick = 
-()=>{
-    localStorage.setItem('carE','9');
-    phonebtn9.style.display = 'none';
-    phonebtn10.style.display = 'block';
-    setTimeout(
-        ()=>{
-            Samsung3.style.display = 'block';
-        },3000
-    );
-}
-phonebtnn5.onclick =
-()=>{
-    localStorage.setItem('carE','10');
-    phonebtn9.style.display = 'block';
-    phonebtn10.style.display = 'none';
-    Samsung3.style.display = 'none';
-}
-//Infinix1//
-phonebtn11.onclick = 
-()=>{
-    localStorage.setItem('carF','11');
-    phonebtn11.style.display = 'none';
-    phonebtn12.style.display = 'block';
-    setTimeout(
-        ()=>{
-            Infinix1.style.display = 'block';
-        },3000
-    );
-}
-phonebtnn6.onclick =
-()=>{
-    localStorage.setItem('carF','12');
-    phonebtn11.style.display = 'block';
-    phonebtn12.style.display = 'none';
-    Infinix1.style.display = 'none';
-}
-//Infinix2//
-phonebtn13.onclick = 
-()=>{
-    localStorage.setItem('carG','13');
-    phonebtn13.style.display = 'none';
-    phonebtn14.style.display = 'block';
-    setTimeout(
-        ()=>{
-            Infinix2.style.display = 'block';
-        },3000
-    );
-}
-phonebtnn7.onclick =
-()=>{
-    localStorage.setItem('carG','14');
-    phonebtn13.style.display = 'block';
-    phonebtn14.style.display = 'none';
-    Infinix2.style.display = 'none';
-}
-//Infinix3//
-phonebtn15.onclick = 
-()=>{
-    localStorage.setItem('carH','15');
-    phonebtn15.style.display = 'none';
-    phonebtn16.style.display = 'block';
-    setTimeout(
-        ()=>{
-            Infinix3.style.display = 'block';
-        },3000
-    );
-}
-phonebtnn8.onclick =
-()=>{
-    localStorage.setItem('carH','16');
-    phonebtn15.style.display = 'block';
-    phonebtn16.style.display = 'none';
-    Infinix3.style.display = 'none';
-}
-window.onload = 
-()=>{
-    if(localStorage.getItem('carA') === '1'){
-        phonebtn1.disabled = '1';
-        phonebtn1.style.display = 'none';
-        phonebtn2.style.display = 'block';
-    setTimeout(
-        ()=>{
-            iphone14.style.display = 'block';
-        },3000
-    );
-    }else if(localStorage.getItem('carA') === '0'){
-        phonebtn1.style.display = 'block';
-        phonebtn2.style.display = 'none';
-        iphone14.style.display = 'none';
-    }
-    if(localStorage.getItem('carB') === '3'){
-        phonebtn3.disabled = '3';
-        phonebtn3.style.display = 'none';
-        phonebtn4.style.display = 'block';
-    setTimeout(
-        ()=>{
-            iphone17.style.display = 'block';
-        },3000
-    );
-    }else if(localStorage.getItem('carB') === '4'){
-        phonebtn3.style.display = 'block';
-        phonebtn4.style.display = 'none';
-        iphone17.style.display = 'none';
-    }
-     if(localStorage.getItem('carC') === '5'){
-        phonebtn5.disabled = '5';
-        phonebtn5.style.display = 'none';
-        phonebtn6.style.display = 'block';
-    setTimeout(
-        ()=>{
-            Samsung.style.display = 'block';
-        },3000
-    );
-    }else if(localStorage.getItem('carC') === '6'){
-        phonebtn5.style.display = 'block';
-        phonebtn6.style.display = 'none';
-        Samsung.style.display = 'none';
-    }
-    if(localStorage.getItem('carD') === '7'){
-        phonebtn7.disabled = '7';
-        phonebtn7.style.display = 'none';
-        phonebtn8.style.display = 'block';
-    setTimeout(
-        ()=>{
-            Samsung2.style.display = 'block';
-        },3000
-    );
-    }else if(localStorage.getItem('carD') === '8'){
-        phonebtn7.style.display = 'block';
-        phonebtn8.style.display = 'none';
-        Samsung2.style.display = 'none';
-    }
-    if(localStorage.getItem('carE') === '9'){
-        phonebtn9.disabled = '9';
-        phonebtn9.style.display = 'none';
-        phonebtn10.style.display = 'block';
-    setTimeout(
-        ()=>{
-            Samsung3.style.display = 'block';
-        },3000
-    );
-    }else if(localStorage.getItem('carE') === '10'){
-        phonebtn9.style.display = 'block';
-        phonebtn10.style.display = 'none';
-        Samsung3.style.display = 'none';
-    }
-    if(localStorage.getItem('carF') === '11'){
-        phonebtn11.disabled = '11';
-        phonebtn11.style.display = 'none';
-        phonebtn12.style.display = 'block';
-    setTimeout(
-        ()=>{
-            Infinix1.style.display = 'block';
-        },3000
-    );
-    }else if(localStorage.getItem('carF') === '12'){
-        phonebtn11.style.display = 'block';
-        phonebtn12.style.display = 'none';
-        Infinix1.style.display = 'none';
-    }
-    if(localStorage.getItem('carG') === '13'){
-        phonebtn13.disabled = '13';
-        phonebtn13.style.display = 'none';
-        phonebtn14.style.display = 'block';
-    setTimeout(
-        ()=>{
-            Infinix2.style.display = 'block';
-        },3000
-    );
-    }else if(localStorage.getItem('carG') === '14'){
-        phonebtn13.style.display = 'block';
-        phonebtn14.style.display = 'none';
-        Infinix2.style.display = 'none';
-    }
-    if(localStorage.getItem('carH') === '15'){
-        phonebtn15.disabled = '15';
-        phonebtn15.style.display = 'none';
-        phonebtn16.style.display = 'block';
-    setTimeout(
-        ()=>{
-            Infinix3.style.display = 'block';
-        },3000
-    );
-    }else if(localStorage.getItem('carH') === '16'){
-        phonebtn15.style.display = 'block';
-        phonebtn16.style.display = 'none';
-        Infinix3.style.display = 'none';
-    }
 }
 //car//
