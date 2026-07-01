@@ -8,6 +8,7 @@ let div3 = document.getElementById('div3');
 let div4 = document.getElementById('div4');
 let divlogin = document.querySelector('.div-body-login');
 let divcar = document.querySelector('.div-body-car');
+let divcar2 = document.querySelector('.div-body-car2');
 let divbody = document.querySelector('.div-body');
 let search = document.getElementById('search');
 let loding = document.querySelector('.loding');
@@ -23,8 +24,9 @@ let btn10 = document.getElementById('btn22');
 let Taskbar = document.querySelector('.Taskbar');
 let timer;
 //phone-btn//
-let btnpone12 = document.getElementById('btnpone12');
 let car2 = document.getElementById('phone-btn1');
+let car3 = document.getElementById('phone-btn2');
+let car4 = document.getElementById('phone-btn3');
 //phone-btn//
 
 btn1.onclick = 
@@ -406,25 +408,84 @@ search.onclick =
     );
 }
 //car//
+//iphone12//
+let btnpone12 = document.getElementById('btnpone12');
 btnpone12.onclick = 
 ()=>{
     let iphone12 = document.getElementById('iphone12');
     let iphone12coby = iphone12.cloneNode(true);
     let btncoby1 = iphone12coby.querySelector('.box1-btn');
+    localStorage.btnpone12 = 1;
     btncoby1.innerHTML = '🛒 حذف من السلة';
     btncoby1.id = 'removeph1';
-    divcar.appendChild(iphone12coby);
+    btncoby1.name = 'remov';
+    divcar2.appendChild(iphone12coby);
     btnpone12.style.display = 'none';
     car2.style.display = 'block';
     removeph1.onclick = ()=>{
+        delete localStorage.btnpone12;
         iphone12coby.remove();
         btnpone12.style.display = 'block'
         car2.style.display = 'none';
     }
 }
-//car//
-car2.onclick = 
+//iphone17//
+let btnpone17 = document.getElementById('btnpone17');
+btnpone17.onclick = 
 ()=>{
+    let iphone17 = document.getElementById('iphone17');
+    let iphone17coby = iphone17.cloneNode(true);
+    let btncoby2 = iphone17coby.querySelector('.box1-btn');
+    localStorage.btnpone17 = 1;
+    btncoby2.innerHTML = '🛒 حذف من السلة';
+    btncoby2.id = 'removeph2';
+    btncoby2.name = 'remov';
+    divcar2.appendChild(iphone17coby);
+    btnpone17.style.display = 'none';
+    car3.style.display = 'block';
+    removeph2.onclick = ()=>{
+        delete localStorage.btnpone17;
+        iphone17coby.remove();
+        btnpone17.style.display = 'block'
+        car3.style.display = 'none';
+    }
+}
+//samsung26//
+let btnpone26 = document.getElementById('btnpone26');
+btnpone26.onclick = 
+()=>{
+    let phone26 = document.getElementById('phone26');
+    let phone26coby = phone26.cloneNode(true);
+    let btncoby3 = phone26coby.querySelector('.box1-btn');
+    localStorage.btnpone26 = 1;
+    btncoby3.innerHTML = '🛒 حذف من السلة';
+    btncoby3.id = 'removeph3';
+    btncoby3.name = 'remov';
+    divcar2.appendChild(phone26coby);
+    btnpone26.style.display = 'none';
+    car4.style.display = 'block';
+    removeph3.onclick = ()=>{
+        delete localStorage.btnpone26;
+        phone26coby.remove();
+        btnpone26.style.display = 'block'
+        car4.style.display = 'none';
+    }
+}
+//car//
+car2.onclick = Car;
+car3.onclick = Car;
+car4.onclick = Car;
+function Car(){
     btn2.click();
+}
+//car//
+if(localStorage.btnpone12){
+    btnpone12.click();
+}
+if(localStorage.btnpone17){
+    btnpone17.click();
+}
+if(localStorage.btnpone26){
+    btnpone26.click();
 }
 //car//

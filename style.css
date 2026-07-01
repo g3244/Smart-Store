@@ -246,7 +246,6 @@ body{
         display: none;
         width: 100%;
         height: auto;
-        margin-top: -9rem;
     }
     .div-body{
         display: none;
@@ -784,7 +783,17 @@ body{
 .box1-btn:active{
     background-color: rgb(252, 139, 34);
 }
-#removeph1{
+.pp{
+    color: rgba(0, 0, 0, 0.247);
+    position: absolute;
+    top: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.divpone{
+    display: none;
+}
+ button[name='remov']{
     position: absolute;
     bottom: 10px;
     left: 45px;
@@ -797,25 +806,13 @@ body{
     border: solid 1px black;
     color: white;
     transition: 0.3s;
-}
-#removeph1:active{
+    }
+    button[name='remov']:active{
     background-color: rgb(214, 2, 2);
 }
-.pp{
-    color: rgba(0, 0, 0, 0.247);
-    position: absolute;
-    top: 6rem;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.divpone{
+   button[name = 'phone-btn']{
     display: none;
-}
-    /*phone*/
-    #phone-btn1{
-        display: none;
-    }
-    /*phone*/
+   }
 }
 /*Ipad*/
 @media (min-width: 501px) and (max-width: 768px){
