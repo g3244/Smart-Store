@@ -16,7 +16,7 @@ body{
     /*Taskbar*/
     .Taskbar{
         position: absolute;
-        z-index: 999;
+        z-index: 988;
         position: fixed;
         flex-direction: column;
         margin: 0;
@@ -180,6 +180,7 @@ body{
     /*loding*/
     .loding{
         display: none;
+        z-index: 999;
         width: 100%;
         height: 6px;
         background: linear-gradient(
@@ -190,6 +191,7 @@ body{
             rgb(0, 195, 255)
         );
         position: fixed;
+        position: absolute;
         top: 70px;
         animation: login 5s infinite;
         background-size: 200% 100%;
@@ -244,7 +246,6 @@ body{
         display: none;
         width: 100%;
         height: auto;
-        padding-top: 4rem;
     }
     .div-body{
         display: none;
@@ -293,6 +294,7 @@ body{
     .setting{
         background-color: aliceblue;
         position: fixed;
+        z-index: 999;
         width: 100%;
         height: 45%;
         bottom: 0;
@@ -353,7 +355,7 @@ body{
     .clos-login{
        position: fixed;
        left: 10px;
-       top: 40px;
+       top: 50px;
        font-size: 20px;
        padding-left: 5px;
        padding-right: 5px;
@@ -550,7 +552,7 @@ body{
         top: 25px;
         right: 8px;
     }
-    .img2{
+    .img24{
         margin-left: 3rem;
     }
     .img1{
@@ -636,7 +638,7 @@ body{
         padding-top: 5px;
         transform: translateX(-61%);
     }
-     .btn4{
+    .btn4{
         position: absolute;
         top: 1px;
         left: 42%;
@@ -676,26 +678,142 @@ body{
     /*body-stor*/
     /*phone*/
     .phone{
+        top: 0;
+        z-index: 20;
         position: fixed;
         width: 100%;
         height: 100%;
-        background-color: red;
+        background-color: white;
         left: 100%;
-        transition: 0.3s;
+        transition: 0.1s;
     }
     .phoneshow{
         left: 0;
     }
     .diivvv{
-        position: fixed;
+        z-index: 10;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         transition: 0.3s;
         background-color: white;
-        left: 100%;
+        align-content: center;
     }
-    .diivshow{
-       left: 0; 
+    /*phone*/
+    .box2{
+    margin-top: 5px;
+    height: 240px;
+    width: 95%;
+    position: relative;
+    left: 10px;
+    top: 7rem;
+    border: 1px solid #e9e6e69d;
+    border-radius: 2px;
+}
+.box3{
+    margin-top: 5px;
+    height: 90px;
+    width: 95%;
+    position: relative;
+    left: 10px;
+    top: 7rem;
+    margin-bottom: 3rem;
+}
+.div-box2{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 40%;
+    border: 1px solid rgba(233, 230, 230, 0.616);
+    border-radius: 2px;
+    background-color: #f8f9f6;
+}
+.img2{
+    width: 120px;
+    position: absolute;
+    right: 8%;
+    transform: translateX(-8%);
+    top: 40px;
+}
+.pre-box1{
+    position: absolute;
+    left: 5%;
+    top: 17px;
+    transform: translateX(-5%);
+}
+.p2-box1{
+    font-size: 22px;
+    position: absolute;
+    top: 9rem;
+    left: 10%;
+    transform: translateX(-10%);
+}
+.mony {
+    font-size: 12px;
+}
+.hr1{
+    width: 9rem;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 5%;
+    transform: translateX(-5%);
+    top: 8em;
+}
+
+.box1-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 45px;
+    padding-bottom: 5px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 50px;
+    background-color: rgb(255, 173, 21);
+    border: solid 1px black;
+    color: white;
+    transition: 0.3s;
+}
+.box1-btn:active{
+    background-color: rgb(252, 139, 34);
+}
+.box1-btnn{
+    position: absolute;
+    bottom: 10px;
+    left: 45px;
+    padding-bottom: 5px;
+    padding-top: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 50px;
+    background-color: rgb(255, 21, 21);
+    border: solid 1px black;
+    color: white;
+    transition: 0.3s;
+}
+.box1-btnn:active{
+    background-color: rgb(214, 2, 2);
+}
+.pp{
+    color: rgba(0, 0, 0, 0.247);
+    position: absolute;
+    top: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.divpone{
+    display: none;
+}
+    /*phone*/
+    #phone-btn2{
+        display: none;
+    }
+    #phone2-btn2{
+        display: none;
     }
     /*phone*/
 }
